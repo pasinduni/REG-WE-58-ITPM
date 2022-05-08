@@ -7,8 +7,8 @@
 #### Using git-bash
 
 1. Clone a repository<br>
-   * `git clone https://github.com/RuwanaraT/Carbonic.git`<br>
-   * `cd Carbonic` -> Go inside of the Carbonic folder 
+   * `git clone https://github.com/pasinduni/REG-WE-58-ITPM`<br>
+   * `cd REG-WE-58-ITPM` -> Go inside of the REG-WE-58-ITPM folder 
 
 2. Create a new branch and switch to a created branch <br>
    * `git checkout -b <branch name>` -> Create a new branch <br>
