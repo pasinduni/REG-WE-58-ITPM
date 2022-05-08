@@ -1,0 +1,50 @@
+body{
+    background-image: url('../img/bck.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+h1{
+   
+    padding: 15px;
+    margin-top: 50px;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.w-50{
+    transition: none;
+    margin: 0 auto;
+    float: none;
+    display: flex;
+    justify-content: center;
+}
+.form-control{
+    margin-bottom: 20px;
+    font-weight: 535;
+    font-size: 10px;
+    height: 70%;
+    transition: none;
+}
+.btn{
+    border-radius: 20px !important;
+}
+.btn-primary-submit{
+    color: #ffffff;
+    background-color: #2e14a1;
+    border-radius: 40px;
+    border-width: 0ch;
+    width: 15%;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none;
+}
+.btn-primary-submit:hover{
+    background-color: #2717b8;
+    color: #ffffff;
+}
