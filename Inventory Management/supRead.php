@@ -37,7 +37,6 @@ include "config.php";
             <table class="table">
                 <thead>
                     <tr>
-                        <!-- <th>Id</th> -->
                         <th>Name</th>
                         <th>Address</th>
                         <th>Phone</th>
@@ -52,7 +51,6 @@ include "config.php";
                             while ($row = $result->fetch_assoc()) {
                     ?>
                             <tr>
-                                <!-- <td><?php echo $row['id']; ?></td> -->
                                 <td><?php echo $row['name']; ?></td>
                                 <td><?php echo $row['address']; ?></td>
                                 <td><?php echo $row['phone']; ?></td>
