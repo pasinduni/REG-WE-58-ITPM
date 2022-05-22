@@ -10,21 +10,21 @@ include "config.php";
 			$remarks = $_POST['remarks'];
 
 			// update
-			$sql = "UPDATE `supplier` SET `type`='$type',`status`='$status',`availability`='$availability',`reservation`='$reservation',`remarks`='$remarks' WHERE `id`='$user_id'";
+			$sql = "UPDATE `room` SET `type`='$type',`status`='$status',`availability`='$availability',`reservation`='$reservation',`remarks`='$remarks' WHERE `id`='$user_id'";
 			// execute the query
 			$result = $conn->query($sql);
 
 			if ($result == TRUE) {
-				header('Location: supRead.php');
+				header('Location: roomRead.php');
 			}else{
 				echo "Error:" . $sql . "<br>" . $conn->error;
 			}
 		}
 		
 		if (isset($_GET['id'])) {
-			$user_id = $_GET['id'];
+			$room_id = $_GET['id'];
 			// get user data
-			$sql = "SELECT * FROM `supplier` WHERE `id`='$user_id'";
+			$sql = "SELECT * FROM `room` WHERE `id`='$room_id'";
 			// execute the sql
 			$result = $conn->query($sql);
 
@@ -52,7 +52,7 @@ include "config.php";
 			<label for="name"> <h4>Enter Room Type: </h4></label><br>
 				<div class="w-50">
 					<input type="text" class="form-control" placeholder="Enter type" name="type" value="<?php echo $type; ?>" required></div>
-					<input type="hidden" name="id" value="<?php echo $user_id; ?>">
+					<input type="hidden" name="id" value="<?php echo $room_id; ?>">
 					<label for="name"> <h4>Enter room Status: </h4></label><br>
 				<div class="w-50">
 					<input type="text" class="form-control" placeholder="Enter Status" name="status" value="<?php echo $status; ?>" required></div>
@@ -77,7 +77,7 @@ include "config.php";
 	} 
 	else{
 		// If the 'id' value is not valid, redirect the user back to read.php page
-		header('Location: supRead.php');
+		header('Location: roomRead.php');
 	}
 }
 ?>
