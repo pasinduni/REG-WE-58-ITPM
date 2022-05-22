@@ -6,9 +6,8 @@
             $Quantity = $_POST['Quantity'];
             $Price = $_POST['Price'];
 
-        //write sql query
         $sql = "INSERT INTO `item`(`Name`, `Quantity`, `Price`) VALUES ('$Name','$Quantity','$Price')";
-        //execute the query 
+    
         $result = $conn->query($sql);
         if ($result == TRUE) {
             header('location:supRead.php');
