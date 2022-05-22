@@ -2,7 +2,7 @@
 include "config.php";
 
     //get data from users table
-    $sql = "SELECT * FROM item";
+    $sql = "SELECT * FROM room";
     //execute the query
     $result = $conn->query($sql);
 ?>
@@ -26,7 +26,7 @@ include "config.php";
 
         <div class="container">
             <h1>Manage Housekeeping</h1>
-            <button class="btn btn-primary my-5"><a href="itemAdd.php">Add Room</a></button>
+            <button class="btn btn-primary my-5"><a href="roomAdd.php">Add Room</a></button>
             <table class="table">
                 <thead>
                     <tr>
@@ -47,7 +47,7 @@ include "config.php";
                                 <td><?php echo $row['Status']; ?></td>
                                 <td><?php echo $row['Type']; ?></td>
                                 <td><?php echo $row['Remarks']; ?></td>
-                                <td><a class="btn btn-danger" href="itemDelete.php?Id=<?php echo $row['Id']; ?>">Delete</a><td>
+                                <td><a class="btn btn-danger" href="roomDelete.php?Id=<?php echo $row['Id']; ?>">Delete</a><td>
                             </tr>
                     <?php     
                             }   
